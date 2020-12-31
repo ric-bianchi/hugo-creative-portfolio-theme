@@ -14,8 +14,12 @@
     <div class="copyright">
       <p class="credit">
         {{ with .Site.Params.copyright }}
-          {{ . | safeHTML }} |
+          {{ . | safeHTML }} 
         {{ end }}
+        <!-- {{ partial "attribution.html" . }}-->
+      </p>
+      <br><br><br><br><br>
+      <p class="credit theme-credits" style="color:#bfbfbf;font-size:8px;">
         {{ partial "attribution.html" . }}
       </p>
     </div>
